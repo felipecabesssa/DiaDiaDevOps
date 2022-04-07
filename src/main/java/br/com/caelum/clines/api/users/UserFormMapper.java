@@ -8,7 +8,7 @@ import br.com.caelum.clines.shared.domain.User;
 import br.com.caelum.clines.shared.infra.Mapper;
 
 @Component
-public class UserForMapper implements Mapper<UserForm, User>  {
+public class UserFormMapper implements Mapper<UserForm, User>  {
 
 	@Override
 	public User map(UserForm source) {

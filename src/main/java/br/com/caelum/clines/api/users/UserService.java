@@ -16,7 +16,7 @@ public class UserService {
 	
 	private final UserRepository repository;
     private final UserViewMapper viewMapper;
-    private final UserForMapper formMapper;
+    private final UserFormMapper formMapper;
 
 	public List<UserView> findAll() {
 		return repository.findAll().stream().map(viewMapper::map).collect(toList());
